@@ -2,7 +2,11 @@
 ## in it's environment
 ## The cacheSolve use the functions of created list to create the inverse matrix and cache it
 
-## Write a short comment describing this function
+## Create a list of functions:
+## set - to set the value of matrix "x" and inversed matrix "inv" to null
+## get - to get matrix "x"
+## setinv  - to set the iversed value of matrix "x" to cache
+## getinv - to get the inversed value from cache
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -24,7 +28,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Use the list created by function above to inverse the matrix "x" and set that value to cache 
+##and check inverse matrix in cache and if there is it then return it
 
 cacheSolve <- function(x, ...) {
   inv <- x$getinv()
